@@ -1,0 +1,3 @@
+# Mag Life
+
+A magazine
