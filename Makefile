@@ -1,8 +1,4 @@
-##
-# Project Title
-#
-# @file
-# @version 0.1
+# Maglife makefile
 
 POLLEN := raco pollen
 SRC := ./src
@@ -11,5 +7,3 @@ SRC := ./src
 
 start:
 	$(POLLEN) start --local -- $(SRC)
-
-# end
