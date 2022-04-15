@@ -6,7 +6,7 @@
   }
 }
 
-◊magazine-segment["Current"]{
+◊magazine-segment["Other"]{
   ◊card{
     another
   }
