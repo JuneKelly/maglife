@@ -43,8 +43,9 @@ nav.menu-bar * {
 }
 
 .article {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 7rem;
 }
 .article-header h1 {
     text-align: center;
