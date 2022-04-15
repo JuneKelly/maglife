@@ -1,3 +1,27 @@
+/* Maglife css */
+
 html {
-    background-color: #fefbff;
+    background-color: #f7e9f8;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.magazine-segment {
+    margin-bottom: 4rem;
+}
+.magazine-segment h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    border-bottom: 12px solid black;
+}
+.magazine-segment .card {
+    background: white;
+    padding: 2rem;
+
 }

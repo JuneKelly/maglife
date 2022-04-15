@@ -1,3 +1,13 @@
 #lang pollen
 
-◊h1{Hello}
+◊magazine-segment["Current"]{
+  ◊card{
+    hello
+  }
+}
+
+◊magazine-segment["Current"]{
+  ◊card{
+    another
+  }
+}

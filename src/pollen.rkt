@@ -12,6 +12,7 @@
 
 
 ;; -- Setup
+(provide (all-defined-out))
 (module setup racket/base
     (provide (all-defined-out))
     (define poly-targets '(html)))
@@ -36,3 +37,14 @@
                                 #:linebreak-proc identity))
            #:string-proc (compose1 smart-quotes smart-dashes)
            #:exclude-tags '(style script))))
+
+
+(define (magazine-segment title . elements)
+  `(div [[class "magazine-segment"]]
+        (h2 ,title)
+        ,@elements))
+
+
+(define (card . elements)
+  `(div [[class "card"]]
+        ,@elements))
