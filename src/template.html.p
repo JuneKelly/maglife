@@ -37,6 +37,13 @@
         (equal? (select-from-metas 'layout metas) "index")
         (not (select-from-metas 'layout metas)))
     ]{
+      <nav class="menu-bar">
+        <a href="/about.html">about</a> |
+        <a href="/contribute.html">contribute</a> |
+        <a href="/topics.html">topics</a> |
+        <a href="/newsletter.html">newsletter</a> |
+        <a href="/contact.html">Contact</a>
+      </nav>
       ◊(->html doc #:tag 'div #:attrs '((id "content-root")))
     }
   </main>

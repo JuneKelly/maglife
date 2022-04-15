@@ -4,18 +4,22 @@ html {
     background-color: #EDE2F4;
 }
 
-header .site-logo {
+body > main {
+    padding-top: 2rem;
+}
+
+header > .site-logo {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
     color: black;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
-header .site-logo a {
+header > .site-logo > a {
     color: black;
     text-decoration: none;
 }
-header .site-logo a:hover {
+header > .site-logo > a:hover {
     color: black;
     text-decoration: underline;
 }
@@ -29,7 +33,7 @@ nav.menu-bar {
     font-family: monospace;
     justify-content: center;
 }
-nav.menu-bar * {
+nav.menu-bar > * {
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -37,7 +41,7 @@ nav.menu-bar * {
 .magazine-segment {
     margin-bottom: 4rem;
 }
-.magazine-segment h2 {
+.magazine-segment > h2 {
     font-size: 1rem;
     font-weight: normal;
     padding-bottom: 0.6rem;
@@ -45,6 +49,7 @@ nav.menu-bar * {
     font-family: monospace;
     border-bottom: 12px solid black;
 }
+
 .card {
     background: white;
     padding: 2rem;
@@ -55,15 +60,15 @@ nav.menu-bar * {
     padding-right: 8rem;
     padding-bottom: 8rem;
 }
-.article-header h1 {
+.article-header >  h1 {
     text-align: center;
     margin-bottom: 1rem;
 }
-.article-header .subtitle {
+.article-header > .subtitle {
     text-align: center;
     font-style: italic;
 }
-.article-header .article-metadata {
+.article-header > .article-metadata {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -72,7 +77,7 @@ nav.menu-bar * {
     padding: 0.6rem;
     font-family: monospace;
 }
-.article-header .article-metadata * {
+.article-header > .article-metadata > * {
     margin-left: 1rem;
     margin-right: 1rem;
 }
