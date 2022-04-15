@@ -55,7 +55,8 @@
 (define (article-link-card path)
   `(div [[class "card"]]
         (div [[class "article-link-title"]]
-             ,(select-from-metas 'title path))
+             (a [[href ,(string-append "/" (symbol->string path))]]
+                ,(select-from-metas 'title path)))
         (div [[class "article-link-meta"]]
              (div [[class "article-link-meta-left"]]
                   (div ,(select-from-metas 'author path))
