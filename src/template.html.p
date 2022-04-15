@@ -11,7 +11,7 @@
 <body>
   <main class="container">
     <header class="container">
-      <div class="site-logo">Mag Life</div>
+      <div class="site-logo"><a href="/">MAG LIFE</a></div>
     </header>
 
     ◊;; Article
@@ -27,7 +27,7 @@
             <span class="publish-date">◊(select-from-metas 'publish-date metas)</span>
           </div>
         </div>
-        ◊(->html doc #:tag 'div #:attrs '((class "article-body")))
+        ◊(->html doc #:tag 'div #:attrs '((class "article-body") (id "content-root")))
       </div>
     }
 
