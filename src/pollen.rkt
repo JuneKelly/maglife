@@ -48,3 +48,10 @@
 (define (card . elements)
   `(div [[class "card"]]
         ,@elements))
+
+(define (nav-menu-bar . elements)
+  `(nav [[class "menu-bar"]]
+        ,@elements))
+
+(define (hyperlink url . text)
+  `(a [[href ,url]] ,@text))
