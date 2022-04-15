@@ -42,7 +42,7 @@
         <a href="/contribute.html">contribute</a> |
         <a href="/topics.html">topics</a> |
         <a href="/newsletter.html">newsletter</a> |
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html">contact</a>
       </nav>
       ◊(->html doc #:tag 'div #:attrs '((id "content-root")))
     }

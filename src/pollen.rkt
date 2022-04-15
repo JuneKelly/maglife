@@ -51,3 +51,14 @@
 
 (define (hyperlink url . text)
   `(a [[href ,url]] ,@text))
+
+(define (article-link-card path)
+  `(div [[class "card"]]
+        (div [[class "article-link-title"]]
+             ,(select-from-metas 'title path))
+        (div [[class "article-link-meta"]]
+             (div [[class "article-link-meta-left"]]
+                  (div ,(select-from-metas 'author path))
+                  (div ,(select-from-metas 'publish-date path)))
+             (div [[class "article-link-meta-right"]]
+                  ,(select-from-metas 'subtitle path)))))

@@ -1,9 +1,7 @@
 #lang pollen
 
 ◊magazine-segment["Current"]{
-  ◊card{
-    hello
-  }
+  ◊article-link-card['a/lorem-ipsum.html]{}
 }
 
 ◊magazine-segment["Other"]{
