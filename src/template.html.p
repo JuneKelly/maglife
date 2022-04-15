@@ -11,7 +11,7 @@
 <body>
   <main class="container">
     <header class="container">
-      <h1>Mag Life</h1>
+      <div class="site-logo">Mag Life</div>
     </header>
     ◊(->html doc #:tag 'div #:attrs '((id "content-root")))
   </main>

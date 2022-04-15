@@ -4,9 +4,12 @@ html {
     background-color: #EDE2F4;
 }
 
-header h1 {
+header .site-logo {
     text-align: center;
     font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3rem;
 }
 
 nav.menu-bar {
@@ -34,8 +37,33 @@ nav.menu-bar * {
     font-family: monospace;
     border-bottom: 12px solid black;
 }
-.magazine-segment .card {
+.card {
     background: white;
     padding: 2rem;
+}
 
+.article {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.article-header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.article-header .subtitle {
+    text-align: center;
+    font-style: italic;
+}
+.article-header .article-metadata {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.6rem;
+    font-family: monospace;
+}
+.article-header .article-metadata * {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
