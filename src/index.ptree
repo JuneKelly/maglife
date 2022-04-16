@@ -5,11 +5,11 @@ about.html
 newsletter.html
 contact.html
 ◊topics.html{
-  design.html
-  tech.html
-  vibes.html
-  work.html
+  topics/design.html
+  topics/tech.html
+  topics/vibes.html
+  topics/work.html
 }
 ◊articles.html{
-  lorem-ipsum.html
+  articles/lorem-ipsum.html
 }

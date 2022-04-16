@@ -13,10 +13,6 @@
   }
 }
 
-◊ui-segment["Articles"]{
-  ◊card{
-    ◊div[#:class "article-list"]{
-      ◊article-list-item['articles/lorem-ipsum.html]
-    }
-  }
+◊ui-segment["Articles" #:link '("See all..." "/articles.html")]{
+  ◊article-list-card{}
 }

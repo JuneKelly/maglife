@@ -84,6 +84,14 @@
            (div [[class "topic-link-label"]]
                 ,topic))))
 
+
+(define (article-list-card)
+  (card
+    `(div [[class "article-list"]]
+         ,@(map article-list-item (or (children 'articles.html "index.ptree") null))
+         )))
+
+
 (define (article-list-item path)
   `(div [[class "article-list-item"]]
         (span (a [[href ,(format "/~a" path)]]
