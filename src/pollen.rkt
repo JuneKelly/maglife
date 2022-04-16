@@ -39,9 +39,13 @@
            #:exclude-tags '(style script))))
 
 
-(define (ui-segment title . elements)
+(define (ui-segment title #:link [link #f] . elements)
   `(div [[class "ui-segment"]]
-        (h2 ,title)
+        (div [[class "ui-segment-heading"]]
+             (h2 , title)
+             ,@(if link
+                   `(" " (a [[href ,(second link)]] ,(first link)))
+                   `()))
         ,@elements))
 
 

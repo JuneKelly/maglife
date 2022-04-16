@@ -2,7 +2,12 @@
 
 index.html
 about.html
-topics.html
 newsletter.html
 contact.html
+◊topics.html{
+  design.html
+  tech.html
+  vibes.html
+  work.html
+}
 a/lorem-ipsum.html

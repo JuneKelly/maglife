@@ -4,7 +4,7 @@
   ◊article-link-card['a/lorem-ipsum.html]{}
 }
 
-◊ui-segment["Other"]{
+◊ui-segment["Topics" #:link '("See all..." "/topics.html")]{
   ◊topic-grid{
     ◊topic-link["design"]{}
     ◊topic-link["tech"]{}

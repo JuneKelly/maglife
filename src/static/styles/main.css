@@ -44,13 +44,30 @@ nav.menu-bar a:hover {
 .ui-segment {
     margin-bottom: 4rem;
 }
-.ui-segment > h2 {
+.ui-segment > .ui-segment-heading {
+    border-bottom: 12px solid black;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+.ui-segment > .ui-segment-heading h2 {
+    display: inline;
     font-size: 1rem;
     font-weight: normal;
-    padding-bottom: 0.6rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
     font-family: monospace;
-    border-bottom: 12px solid black;
+}
+.ui-segment > .ui-segment-heading p {
+    display: inline;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+}
+.ui-segment .ui-segment-heading  a {
+    font-family: monospace;
+    margin-left: 1rem;
 }
 
 .card {
