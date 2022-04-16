@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊ui-segment["Current"]{
-  ◊article-link-card['a/lorem-ipsum.html]{}
+  ◊article-link-card['articles/lorem-ipsum.html]{}
 }
 
 ◊ui-segment["Topics" #:link '("See all..." "/topics.html")]{

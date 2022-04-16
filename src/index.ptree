@@ -10,4 +10,6 @@ contact.html
   vibes.html
   work.html
 }
-a/lorem-ipsum.html
+◊articles.html{
+  lorem-ipsum.html
+}
