@@ -33,10 +33,10 @@
            elements
            ;; Note: this can end up inserting paragraphs where
            ;; they may not be expected.
-           #:txexpr-elements-proc
-           (lambda (elements)
-             (decode-paragraphs elements
-                                #:linebreak-proc identity))
+           ;; #:txexpr-elements-proc
+           ;; (lambda (elements)
+           ;;   (decode-paragraphs elements
+           ;;                      #:linebreak-proc identity))
            #:string-proc (compose1 smart-quotes smart-dashes)
            #:exclude-tags '(style script))))
 
@@ -79,8 +79,7 @@
 
 (define (topic-link topic)
   `(div [[class "topic-link"]]
-        (p []
-           (a [[href ,(format "/topics/~a.html" topic)]]
-              (img [[src ,(format "/static/images/topics/~a.png" topic)]])
-              (div [[class "topic-link-label"]]
-                   ,topic)))))
+        (a [[href ,(format "/topics/~a.html" topic)]]
+           (img [[src ,(format "/static/images/topics/~a.png" topic)]])
+           (div [[class "topic-link-label"]]
+                ,topic))))
