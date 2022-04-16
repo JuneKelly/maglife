@@ -43,7 +43,6 @@
     ]{
       <nav class="menu-bar">
         <a href="/about.html">about</a> |
-        <a href="/contribute.html">contribute</a> |
         <a href="/topics.html">topics</a> |
         <a href="/newsletter.html">newsletter</a> |
         <a href="/contact.html">contact</a>

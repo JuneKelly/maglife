@@ -39,8 +39,8 @@
            #:exclude-tags '(style script))))
 
 
-(define (magazine-segment title . elements)
-  `(div [[class "magazine-segment"]]
+(define (ui-segment title . elements)
+  `(div [[class "ui-segment"]]
         (h2 ,title)
         ,@elements))
 
