@@ -1,9 +1,9 @@
 #lang pollen
 ◊(define-meta layout "article")
-◊(define-meta title "Lorem Ipsum")
-◊(define-meta publish-date "2022-01-01")
-◊(define-meta author "Jane Doe")
-◊(define-meta subtitle "Some thoughts on noise, toucans, and other spectral things.")
+◊(define-meta title "Doler Set Amut")
+◊(define-meta publish-date "2021-12-01")
+◊(define-meta author "April Peters")
+◊(define-meta subtitle "A short introduction to a delightful theory.")
 
 ◊p{
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

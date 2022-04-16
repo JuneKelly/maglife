@@ -1,9 +1,9 @@
 #lang pollen
 ◊(define-meta layout "article")
-◊(define-meta title "Lorem Ipsum")
-◊(define-meta publish-date "2022-01-01")
-◊(define-meta author "Jane Doe")
-◊(define-meta subtitle "Some thoughts on noise, toucans, and other spectral things.")
+◊(define-meta title "Vigo Swinging Musket")
+◊(define-meta publish-date "2021-11-01")
+◊(define-meta author "Abby Rhodes")
+◊(define-meta subtitle "Do muskets breathe in the dark?")
 
 ◊p{
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
