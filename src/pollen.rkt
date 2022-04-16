@@ -31,6 +31,8 @@
   (txexpr 'root empty
           (decode-elements
            elements
+           ;; Note: this can end up inserting paragraphs where
+           ;; they may not be expected.
            #:txexpr-elements-proc
            (lambda (elements)
              (decode-paragraphs elements
