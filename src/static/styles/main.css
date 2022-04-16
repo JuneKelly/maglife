@@ -1,13 +1,15 @@
-/* Maglife css */
+/* -------- Maglife css -------- */
 
+/* Basics */
 html {
     background-color: #EDE2F4;
 }
-
 body > main {
     padding-top: 2rem;
 }
 
+
+/* Header and logo */
 header > .site-logo {
     text-align: center;
     font-size: 3rem;
@@ -24,6 +26,8 @@ header > .site-logo > a:hover {
     text-decoration: underline;
 }
 
+
+/* Nav menu */
 nav.menu-bar {
     margin-bottom: 2rem;
     border-top: 1px solid black;
@@ -41,6 +45,8 @@ nav.menu-bar a:hover {
     text-decoration: underline;
 }
 
+
+/* UI Segments */
 .ui-segment {
     margin-bottom: 4rem;
 }
@@ -57,23 +63,42 @@ nav.menu-bar a:hover {
     margin-bottom: 1rem;
     font-family: monospace;
 }
-.ui-segment > .ui-segment-heading p {
-    display: inline;
-    font-size: 1rem;
-    font-weight: normal;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    font-family: monospace;
-}
 .ui-segment .ui-segment-heading  a {
     font-family: monospace;
     margin-left: 1rem;
 }
 
+
+/* Cards */
 .card {
     background: white;
     padding: 2rem;
 }
+
+
+/* Article link card */
+.article-link-title {
+    text-align: center;
+    margin-bottom: 0.6rem;
+    font-size: 3rem;
+    font-family: serif !important;
+}
+.article-link-title a:hover {
+    text-decoration: underline;
+}
+.article-link-meta {
+    display: flex;
+    font-family: monospace;
+}
+.article-link-meta-left {
+    flex-basis: 30%;
+    padding-right: 1rem;
+}
+.article-link-meta-right {
+    border-left: 1px solid #ddd;
+    padding-left: 2rem;
+}
+
 
 /* Topic Grid */
 .topic-grid {
@@ -90,12 +115,38 @@ nav.menu-bar a:hover {
 .topic-grid > .topic-link:hover {
     text-decoration: underline;
 }
-.topic-grid > .topic-link p {
+.topic-grid > .topic-link img {
     margin-bottom: 0.5rem;
 }
 .topic-grid > .topic-link img:hover {
     outline: 1px solid black;
 }
+
+
+/* Article list */
+.article-list {
+    font-family: monospace;
+}
+.article-list .article-list-item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    margin: 0;
+}
+.article-list .article-list-item:last-child {
+    border-bottom: none;
+}
+.article-list .article-list-item .article-list-item-title {
+    flex-basis: 50%;
+}
+.article-list .article-list-item .article-list-item-author {
+    flex-basis: 30%;
+
+}
+.article-list .article-list-item .article-list-item-date {
+    flex-basis: 20%;
+}
+
 
 /* Articles */
 .article {
@@ -130,28 +181,6 @@ nav.menu-bar a:hover {
     padding-right: 4rem;
 }
 
-/* Article link cards */
-.article-link-title {
-    text-align: center;
-    margin-bottom: 0.6rem;
-    font-size: 3rem;
-    font-family: serif !important;
-}
-.article-link-title a:hover {
-    text-decoration: underline;
-}
-.article-link-meta {
-    display: flex;
-    font-family: monospace;
-}
-.article-link-meta-left {
-    flex-basis: 30%;
-    padding-right: 1rem;
-}
-.article-link-meta-right {
-    border-left: 1px solid #ddd;
-    padding-left: 2rem;
-}
 
 /* Mobile */
 @media (max-width: 576px) {

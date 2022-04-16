@@ -12,3 +12,18 @@
     ◊topic-link["work"]{}
   }
 }
+
+◊ui-segment["Articles"]{
+  ◊card{
+    ◊div[#:class "article-list"]{
+      ◊div[#:class "article-list-item"]{
+        ◊span[#:class "article-list-item-title"]{Foo}
+        ◊span[#:class "article-list-item-author"]{Bar}
+        ◊span[#:class "article-list-item-date"]{Baz}}
+      ◊div[#:class "article-list-item"]{
+        ◊span[#:class "article-list-item-title"]{Foo}
+        ◊span[#:class "article-list-item-author"]{Bar}
+        ◊span[#:class "article-list-item-date"]{Baz}}
+    }
+  }
+}
