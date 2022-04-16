@@ -27,7 +27,11 @@
             <span class="publish-date">◊(select-from-metas 'publish-date metas)</span>
           </div>
         </div>
-        ◊(->html doc #:tag 'div #:attrs '((class "article-body") (id "content-root")))
+        ◊(->html doc
+                 #:tag 'div
+                 #:attrs
+                 '((class "article-body")
+                   (id "rendered-content-root")))
       </div>
     }
 
@@ -44,7 +48,10 @@
         <a href="/newsletter.html">newsletter</a> |
         <a href="/contact.html">contact</a>
       </nav>
-      ◊(->html doc #:tag 'div #:attrs '((id "content-root")))
+      ◊(->html doc
+               #:tag 'div
+               #:attrs
+               '((id "rendered-content-root")))
     }
   </main>
 </body>

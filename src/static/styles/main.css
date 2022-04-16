@@ -107,8 +107,28 @@ nav.menu-bar a:hover {
 }
 .article-link-meta-left {
     flex-basis: 30%;
+    padding-right: 1rem;
 }
 .article-link-meta-right {
     border-left: 1px solid #ddd;
     padding-left: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .article {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .article-body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    nav.menu-bar {
+        flex-wrap: wrap;
+    }
+    nav.menu-bar > * {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 }
