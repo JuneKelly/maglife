@@ -49,8 +49,10 @@
   `(div [[class "card"]]
         ,@elements))
 
+
 (define (hyperlink url . text)
   `(a [[href ,url]] ,@text))
+
 
 (define (article-link-card path)
   `(div [[class "card"]]
@@ -63,3 +65,16 @@
                   (div ,(select-from-metas 'publish-date path)))
              (div [[class "article-link-meta-right"]]
                   ,(select-from-metas 'subtitle path)))))
+
+(define (topic-grid . elements)
+  `(div [[class "topic-grid"]]
+        ,@elements))
+
+
+(define (topic-link topic)
+  `(div [[class "topic-link"]]
+        (p []
+           (a [[href ,(format "/topics/~a.html" topic)]]
+              (img [[src ,(format "/static/images/topics/~a.png" topic)]])
+              (div [[class "topic-link-label"]]
+                   ,topic)))))
