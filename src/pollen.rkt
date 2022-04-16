@@ -83,3 +83,10 @@
            (img [[src ,(format "/static/images/topics/~a.png" topic)]])
            (div [[class "topic-link-label"]]
                 ,topic))))
+
+(define (article-list-item path)
+  `(div [[class "article-list-item"]]
+        (span (a [[href ,(format "/~a" path)]]
+                 ,(select-from-metas 'title path)))
+        (span ,(select-from-metas 'author path))
+        (span ,(select-from-metas 'publish-date path))))
