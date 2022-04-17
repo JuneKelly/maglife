@@ -3,6 +3,7 @@
 ◊(define-meta title "Lorem Ipsum")
 ◊(define-meta publish-date "2022-01-01")
 ◊(define-meta author "Jane Doe")
+◊(define-meta topic "vibes")
 ◊(define-meta subtitle "Some thoughts on noise, toucans, and other spectral things.")
 
 ◊p{

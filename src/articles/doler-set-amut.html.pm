@@ -3,6 +3,7 @@
 ◊(define-meta title "Doler Set Amut")
 ◊(define-meta publish-date "2021-12-01")
 ◊(define-meta author "April Peters")
+◊(define-meta topic "work")
 ◊(define-meta subtitle "A short introduction to a delightful theory.")
 
 ◊p{

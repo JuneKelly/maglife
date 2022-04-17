@@ -1,7 +1,5 @@
 #lang pollen
 
 ◊ui-segment["Design"]{
-  ◊card{
-    Coming soon...
-  }
+  ◊article-list-card[#:topic "design"]{}
 }

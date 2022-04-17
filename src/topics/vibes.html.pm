@@ -1,7 +1,5 @@
 #lang pollen
 
 ◊ui-segment["Vibes"]{
-  ◊card{
-    Coming soon...
-  }
+  ◊article-list-card[#:topic "vibes"]{}
 }

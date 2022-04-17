@@ -85,11 +85,17 @@
                 ,topic))))
 
 
-(define (article-list-card)
+(define (article-list-card #:topic [topic 'all])
   (card
     `(div [[class "article-list"]]
-         ,@(map article-list-item (or (children 'articles.html "index.ptree") null))
-         )))
+          ,@(map article-list-item
+                 (filter
+                  (lambda (page)
+                    (article-in-topic? page topic))
+                  (children 'articles.html
+                            (build-path
+                             (current-project-root)
+                             "index.ptree")))))))
 
 
 (define (article-list-item path)
@@ -98,3 +104,9 @@
                  ,(select-from-metas 'title path)))
         (span ,(select-from-metas 'author path))
         (span ,(select-from-metas 'publish-date path))))
+
+
+(define (article-in-topic? path topic)
+  (or (eq? topic 'all)
+      (equal? topic
+       (select-from-metas 'topic path))))

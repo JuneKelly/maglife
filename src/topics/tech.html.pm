@@ -1,7 +1,5 @@
 #lang pollen
 
 ◊ui-segment["Tech"]{
-  ◊card{
-    Coming soon...
-  }
+  ◊article-list-card[#:topic "tech"]{}
 }

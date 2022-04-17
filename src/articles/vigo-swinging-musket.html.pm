@@ -3,6 +3,7 @@
 ◊(define-meta title "Vigo Swinging Musket")
 ◊(define-meta publish-date "2021-11-01")
 ◊(define-meta author "Abby Rhodes")
+◊(define-meta topic "tech")
 ◊(define-meta subtitle "Do muskets breathe in the dark?")
 
 ◊p{
