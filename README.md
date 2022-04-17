@@ -13,7 +13,6 @@ A skeleton project in [pollen](https://docs.racket-lang.org/pollen/index.html), 
 
 ## TODO
 
-- [ ] Vendor fonts?
 - [ ] Demo use of:
   - [ ] Block quotes
   - [ ] Images
