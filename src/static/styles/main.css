@@ -82,6 +82,7 @@ nav.menu-bar a:hover {
     margin-bottom: 0.6rem;
     font-size: 3rem;
     font-family: serif !important;
+    font-weight: 600;
 }
 .article-link-title a:hover {
     text-decoration: underline;
@@ -158,6 +159,7 @@ nav.menu-bar a:hover {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 600;
     font-family: serif;
 }
 .article-header > .subtitle {
