@@ -86,16 +86,19 @@
 
 
 (define (article-list-card #:topic [topic 'all])
-  (card
-    `(div [[class "article-list"]]
-          ,@(map article-list-item
-                 (filter
-                  (lambda (page)
-                    (article-in-topic? page topic))
-                  (children 'articles.html
-                            (build-path
-                             (current-project-root)
-                             "index.ptree")))))))
+  (let ([article-list
+         (filter
+          (lambda (page)
+            (article-in-topic? page topic))
+          (children 'articles.html
+                    (build-path
+                     (current-project-root)
+                     "index.ptree")))])
+    (if (empty? article-list)
+        (card '(div [] "Nothing here..."))
+        (card
+         `(div [[class "article-list"]]
+               ,@(map article-list-item article-list))))))
 
 
 (define (article-list-item path)
