@@ -1,6 +1,6 @@
 #lang pollen
 
-◊ui-segment["Contact"]{
+◊ui-segment["CONTACT"]{
   ◊card{
     Coming soon...
   }

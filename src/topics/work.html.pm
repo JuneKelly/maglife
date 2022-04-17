@@ -1,5 +1,5 @@
 #lang pollen
 
-◊ui-segment["Work"]{
+◊ui-segment["WORK"]{
   ◊article-list-card[#:topic "work"]{}
 }

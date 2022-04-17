@@ -1,6 +1,6 @@
 #lang pollen
 
-◊ui-segment["Topics"]{
+◊ui-segment["TOPICS"]{
   ◊topic-grid{
     ◊topic-link["design"]{}
     ◊topic-link["tech"]{}
